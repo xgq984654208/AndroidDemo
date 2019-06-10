@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#53BBEE"
+            android:orientation="vertical">
+
+            <com.example.dong.odometer.StepView
+                android:id="@+id/stepView"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                custom:backGroundColor="#53BBEE"
+                custom:lineColor="#3AE7D7"
+                custom:othetTextColor="@color/othetTextColor"
+                custom:outerCircleColor="@color/outerCircleColor"
+                custom:outerDotColor="@color/outerDotColor"
+                custom:ringColor="@color/ringColor"
+                custom:stepNumColor="@color/stepNumColor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/start_count"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button"
+                    android:text="开启今日计步"
+                    android:textColor="#04D546" />
+
+                <Button
+                    android:id="@+id/finish_count"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button"
+                    android:text="打 卡"
+                    android:textColor="#04D546" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                custom:cardCornerRadius="8dp"
+                custom:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <TextView
+                        android:id="@+id/card_history_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="运动记录"
+                        android:textColor="#04D546"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="100dp"
+                        android:layout_toRightOf="@+id/card_history_title"
+                        android:src="@mipmap/icon_array" />
+
+                    <com.hanks.htextview.fade.FadeTextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_margin="20dp"
+                        android:textSize="20dp"
+                        android:textColor="#04D546"
+                        android:layout_below="@id/card_history_title"
+                        android:id="@+id/fade_text"
+                        android:text="生命在于运动"
+                        custom:animationDuration="1500"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="55dp"
+                        android:src="@mipmap/icon_run2" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                custom:cardCornerRadius="8dp"
+                custom:cardElevation="8dp">
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

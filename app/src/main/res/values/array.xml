@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sayings">
+        <item>运动的作用可以代替药物</item>
+        <item>流水不腐，户枢不蠹，动也</item>
+        <item>生存之特点，即在躁动不息</item>
+        <item>只有跑出来的美丽</item>
+        <item>燃烧我的卡路里</item>
+        <item>生命不息，运动不止</item>
+        <item>每日频行，必身轻目明</item>
+        <item>人怕不动，脑怕不用</item>
+        <item>站如松，坐如钟，走如风</item>
+        <item>动静无端，阴阳无始</item>
+        <item>运动是填补空虚的最佳良药</item>
+    </string-array>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="backGroundColor">#0FA9C1</color>
+    <color name="lineColor">#8ED8E5</color>
+    <color name="othetTextColor">#8ED8E5</color>
+    <color name="outerCircleColor">#8ED8E5</color>
+    <color name="outerDotColor">#ffffff</color>
+    <color name="ringColor">#8ED8E5</color>
+    <color name="stepNumColor">#ffffff</color>
+
+    <color name="black">#000</color>
+
+</resources>
